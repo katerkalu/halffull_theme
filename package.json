@@ -1,0 +1,28 @@
+{
+    "name": "Half Full",
+    "description": "Minimalisic theme for ghost",
+    "version": "0.1a",
+    "engines": {
+        "ghost": ">=2.0.0"
+    },
+    "license": "MIT",
+    "author": {
+		"name": "Dion Tautkus",
+        "email": "dion.tautkus@gmail.com"
+    },
+	"gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Magazine"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "config": {
+        "posts_per_page": 10
+    }
+}
