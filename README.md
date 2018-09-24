@@ -12,7 +12,7 @@ Please note that this is a work in progress. As it runs under MIT lisence, feel 
 
 Author: Dion Tautkus (twitter.com/katerkalu).
 
-Contact: dion.tautus - insert some at here - gmail - insert DOT here - com
+Contact: dion.tautkus - insert some at here - gmail - insert DOT here - com
 
 Current Version: 0.1a
 
