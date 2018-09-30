@@ -1,4 +1,4 @@
-# halffull_theme 0.1a
+# halffull_theme 0.5
 Minimal theme with a bunch of neat extras such as fitvids.js for responsive embeds and featherlight.js for popping images in a nice overlay.
 Currently supports primary author cards, small post nav, a bunch of headings and so on.
 
@@ -14,7 +14,15 @@ Author: Dion Tautkus (twitter.com/katerkalu).
 
 Contact: dion.tautkus - insert some at here - gmail - insert DOT here - com
 
-Current Version: 0.1a
+Current Version: 0.5
+
+---
+
+# New in 0.5
+
+* Theme makes use of custom excerpts now
+* Reworked how the author is displayed under a post
+* some minor changes
 
 ---
 
@@ -24,7 +32,7 @@ Current Version: 0.1a
 * I might integrate some kind of iconset. But that a huuuge maaaayyyybe
 * Update the authorcard with the matching entries from the profile settings
 * Images in the post loop will get featherlight overlay
-* Updating the theme options so you can use excerpts or full posts on the post lists
+* ~~Updating the theme options so you can use excerpts or full posts on the post lists~~
 * Choose wether to use a logo, or text for the main heading (this isn't working somehow right now, mainly because I'm fucking lazy)
 
 ---
@@ -37,6 +45,7 @@ I like Vapor Theme by Seth Lilly, so be sure to [check it out here](https://gith
 
 # Releases
 
+0.5 - A release to get away from that alpha status thingy
 0.1a - Quick public release for fun. This version has not been tested in a production environment!
 
 ---
