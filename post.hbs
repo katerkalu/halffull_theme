@@ -17,7 +17,7 @@
 			{{/if}}
             <p>{{content}}</p>
 			
-			{{#if tags}}<div class="tagwrapper"><div class="post-data tags">{{tags prefix="" separator=""}}</div></div>{{/if}}
+			{{#if tags}}<div class="tagwrapper"><div class="post-data tags">Tags: {{tags prefix="" separator=", "}}</div></div>{{/if}}
         </section>
 		
 		<section class="post-nav">
@@ -35,11 +35,14 @@
 
             {{#if primary_author}}
             <section class="author">
+				<h3>Written by...</h3>
                 <div class="authorimage" style="background: url({{primary_author.profile_image}})"></div>
-                <h4><a href="{{primary_author.website}}">{{primary_author.name}}</a></h4>
-                <p class="bio">{{primary_author.bio}}</p>
-				<p class="authorlinks"><a href="{{twitter_url}}">{{twitter}}</a> | 
-            </section>
+				<div class="authordesc">
+					<h4><a href="{{primary_author.website}}">{{primary_author.name}}</a></h4>
+					<p class="bio">{{primary_author.bio}}</p>
+					<p class="authorlinks">{{#if twitter}}<a href="{{twitter_url}}">{{twitter}}</a>{{/if}}</p>
+				</div>
+			</section>
             {{/if}}
 
         </footer>

@@ -6,16 +6,27 @@
 
     <article class="preview">
         <header>
-			<div class="post-meta"><time class="post-date" datetime="{{date format="YYYY-MM-DDTHH:mm:ss.SS\Z"}}">{{date published_at format="DD.MM.YYYY"}}</time></div>
+			<div class="post-meta">
+				<time class="post-date" datetime="{{date format="YYYY-MM-DDTHH:mm:ss.SS\Z"}}">{{date published_at format="DD.MM.YYYY"}}</time> | 
+				{{#primary_tag}}
+					<a href="{{url}}">{{name}}</a>
+				{{/primary_tag}}
+			</div>
             <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
         </header>
         <section class="post-content">
 			{{#if feature_image}}
 				<a href="{{url}}"><img src="{{img_url feature_image}}" class="feature_image"></a>
 			{{/if}}
-            <p>{{content}}</p>
 			
-			{{#if tags}}<div class="post-data tags">{{tags prefix="" separator=""}}</div>{{/if}}
+			{{#if custom_excerpt}}
+				<p>{{custom_excerpt}}</p>
+				<p><a class="read-more" href="{{url}}">Read on &raquo;</a></p>
+			{{else}}
+				<p>{{content}}</p>
+			{{/if}}
+			
+			
         </section>
     </article>
 
