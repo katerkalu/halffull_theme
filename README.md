@@ -6,6 +6,8 @@ This theme uses Georgia as a websafe font and loads any plugins, such as jQuery,
 
 Please note that this is a work in progress. As it runs under MIT lisence, feel free to do stuff with it. Shoot me an E-Mail if you did so.
 
+![Some Text](https://github.com/katerkalu/halffull_theme/blob/master/halfffull-preview1.jpg)
+
 ---
 
 # Quick Notes
