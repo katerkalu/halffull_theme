@@ -48,6 +48,7 @@ I like Vapor Theme by Seth Lilly, so be sure to [check it out here](https://gith
 # Releases
 
 0.5 - A release to get away from that alpha status thingy
+
 0.1a - Quick public release for fun. This version has not been tested in a production environment!
 
 ---
