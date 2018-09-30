@@ -4,6 +4,7 @@
         {{#foreach navigation}}
         <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">/{{label}}/&nbsp;&nbsp;</a></li>
         {{/foreach}}
+		{{#if twitter}}<li><a href="{{twitter_url}}">Twitter</a></li>{{/if}}
         <!-- End the loop -->
     </ul>
 </div>
