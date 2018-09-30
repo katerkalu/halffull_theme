@@ -17,6 +17,10 @@
             "Magazine"
         ]
     },
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/katerkalu/halffull_theme.git"
+    },
     "keywords": [
         "ghost",
         "theme",
