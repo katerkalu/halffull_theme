@@ -16,14 +16,14 @@
         </header>
         <section class="post-content">
 			{{#if feature_image}}
-				<a href="{{url}}"><img src="{{img_url feature_image}}" class="feature_image"></a>
+				<a href="{{url}}" class="feature_image_link"><img src="{{img_url feature_image}}" class="feature_image"></a>
 			{{/if}}
 			
 			{{#if custom_excerpt}}
-				<p>{{custom_excerpt}}</p>
+				{{custom_excerpt}}
 				<p><a class="read-more" href="{{url}}">Read on &raquo;</a></p>
 			{{else}}
-				<p>{{content}}</p>
+				{{content}}
 			{{/if}}
 			
 			

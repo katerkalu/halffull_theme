@@ -15,7 +15,7 @@
 			{{#if feature_image}}
 				<a href="#" data-featherlight="{{img_url feature_image}}"><img src="{{img_url feature_image}}" class="feature_image"></a>
 			{{/if}}
-            <p>{{content}}</p>
+            {{content}}
 			
 			{{#if tags}}<div class="tagwrapper"><div class="post-data tags">{{tags prefix="" separator=""}}</div></div>{{/if}}
         </section>
@@ -23,14 +23,14 @@
         <footer class="post-footer">
 		
 
-            {{#if primary_author}}
+            {{#primary_author}}
             <section class="author">
                 <div class="authorimage" style="background: url({{primary_author.profile_image}})"></div>
                 <h4><a href="{{primary_author.website}}">{{primary_author.name}}</a></h4>
                 <p class="bio">{{primary_author.bio}}</p>
 				 
             </section>
-            {{/if}}
+            {{/primary_author}}
 
         </footer>
 
