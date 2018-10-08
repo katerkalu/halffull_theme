@@ -1,10 +1,24 @@
+/* libre-baskerville-regular - latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/libre-baskerville-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'),
+       url('../fonts/libre-baskerville-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/libre-baskerville-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/libre-baskerville-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/libre-baskerville-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/libre-baskerville-v5-latin-regular.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+}
+
 body {
   background-color: #ffffff;
   color: #151515;
   font-size: 16px;
   font-weight: 400;
-  font-family: Georgia,Times,Times New Roman,serif;
-  line-height: 1.6em;
+  font-family: 'Libre Baskerville';
+  line-height: 1.65em;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -48,6 +62,11 @@ article.preview {
 	border-bottom: 1px dashed #ddd;
 }
 
+.post-content .read-more a {
+	border-bottom: 1px solid #1e90ff;
+	color: #151515;
+}
+
 /* === Header === */
 h1.blog-title,
 h2.blog-description {
@@ -84,6 +103,7 @@ h1.post-title {
 	background: url("../images/h1.png") no-repeat left center;
 	color: #151515;
 	padding: 0 0 0 12px;
+	margin: 0 0 16px 0;
 	font-size: 22px;
 	line-height: 22px;
 	font-weight: 700;
@@ -100,7 +120,17 @@ h2 {
 
 .feature_image {
 	width: 100%;
-	margin: 10px auto 0 auto;
+	margin: 0 auto 16px auto;
+}
+
+.feature_image_link {
+	display: block;
+	position: relative;
+	padding: 0!important;
+}
+
+.feature_image:after {
+	margin: 0 0 16px 0;
 }
 
 .my-fancy-nav-wrapper {
@@ -127,6 +157,10 @@ ul.nav li a {
 .post-excerpt a {
 	color: #1e90ff;
 	text-decoration: none;
+}
+
+.post-content p {
+	margin: 0 0 16px 0;
 }
 
 .post-content a {
@@ -190,6 +224,7 @@ ul.nav li a {
 figure.kg-image-card {
 	margin-inline-start: 0;
     margin-inline-end: 0;
+	margin: 0 0 16px 0;
 }
 
 figure.kg-image-card img {
@@ -201,6 +236,7 @@ figure.kg-embed-card {
     margin-inline-end: 0;
 	max-width: 100%;
 	width: 100%;
+	margin: 0 0 16px 0;
 }
 
 figure.kg-embed-card iframe {
@@ -267,7 +303,7 @@ section.post-nav {
 
 section.author {
 	border-top: 1px solid #ddd;
-	padding: 40px 30px 0 30px;
+	padding: 20px 0 0 0;
 	margin: 0 auto;
 	display: table;
 }
@@ -277,22 +313,37 @@ section.author {
 }
 
 .authorimage {
-	width: 64px;
-	height: 64px;
+	width: 92px;
+	height: 92px;
 	border-radius: 50% 50% 50% 50%;
 	border: 1px solid #ddd;
-	padding: 4px;
-	margin: 0 auto 5px auto;
+	margin: 0 15px 5px auto;
 	background-size: cover!important;
 	float: left;
 }
 
 .authordesc {
-	padding: 0 0 0 85px;
+	padding: 0 0 0 0;
+	display: block;
+	box-sizing: inherit;
 }
 
 .authordesc p {
 	margin: 0;
+}
+
+.authordesc ul {
+	padding: 0;
+	margin: 0;
+}
+
+.authordesc ul li {
+	list-style: none;
+	display: inline;
+}
+
+.authordesc ul li a {
+	color: #333;
 }
 
 .author h4 {
@@ -315,15 +366,24 @@ section.author {
 	background: #fff;
 	max-width: 100%;
 	width: 100%;
+	height: 22px;
 	border-bottom: 1px dashed #ddd;
-	text-align: center;
+}
+
+.pagination a {
+	color: #151515;
 }
 
 .pagination .page-number {
+	width: 33.333%;
+	display: block;
+	float: left;
+	text-align: center;
 }
 
 .pagination .newer-posts {
 	float: left;
+	width: 33.333%;
 }
 
 .pagination .newer-posts a {
@@ -331,7 +391,9 @@ section.author {
 }
 
 .pagination .older-posts {
-	float: right;
+	float: left;
+	width: 33.333%;
+	text-align: right;
 }
 
 footer.site-footer {
