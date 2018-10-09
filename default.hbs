@@ -34,7 +34,7 @@
         <div class="inner">
             {{!> footer-description}}
             <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</section>
-            <section>Half Full theme by <a href="https://twitter.com/katerkalu">Dion Tautkus</a></section>
+            <section><a href="https://github.com/katerkalu/halffull_theme" rel=noopener">Half Full theme</a> by Dion Tautkus</section>
             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org/"><span class="hidden">Ghost</span></a></section>
         </div>
     </footer>
@@ -46,6 +46,7 @@
   $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
     $(".post-content").fitVids();
+	$('.kg-image').featherlight({targetAttr: 'src'});
   });
 </script>
 	
