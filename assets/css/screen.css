@@ -14,11 +14,11 @@
 
 body {
   background-color: #ffffff;
-  color: #151515;
+  color: #333;
   font-size: 16px;
   font-weight: 400;
   font-family: 'Libre Baskerville';
-  line-height: 1.65em;
+  line-height: 1.7em;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -30,6 +30,18 @@ body {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
+
+*::selection {
+    color: #FFFFFF;
+    background: #207CDF;
+}
+
+a {
+	color: #333;
+	transition: 500ms;
+	-webkit-transition: 500ms;
+}
+
 h1 {
   color: #151515;
   font-size: 22px;
@@ -40,12 +52,43 @@ h1 {
 }
 
 .wrapper {
-	max-width: 500px;
+	max-width: 560px;
 	width: 90%;
 	margin: 0 auto;
 	padding: 0 15px 0 15px;
 }
-#site-header,
+
+.social-head-menu {
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto 20px auto;
+	display: block;
+	text-align: center;
+}
+
+.social-head-menu ul {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.social-head-menu li {
+	display: inline;
+	margin: 0 10px 0 0;
+}
+
+.social-head-menu li a {
+	color: #333;
+	text-decoration: none;
+}
+
+#site-header {
+	margin: 20px auto 40px auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+
 article,
 a.archive-link,
 .article-nav {
@@ -62,9 +105,11 @@ article.preview {
 	border-bottom: 1px dashed #ddd;
 }
 
-.post-content .read-more a {
+a.read-more {
+	margin: 16px 0 0 0;
 	border-bottom: 1px solid #1e90ff;
-	color: #151515;
+	color: #151515!important;
+	display: inline-block;
 }
 
 /* === Header === */
@@ -101,7 +146,7 @@ header.page-header {
 
 h1.post-title {
 	background: url("../images/h1.png") no-repeat left center;
-	color: #151515;
+	color: #333;
 	padding: 0 0 0 12px;
 	margin: 0 0 16px 0;
 	font-size: 22px;
@@ -109,8 +154,9 @@ h1.post-title {
 	font-weight: 700;
 }
 
+
 h1.post-title a {
-	color: #151515;
+	color: #333;
 	text-decoration: none;
 }
 
@@ -127,6 +173,8 @@ h2 {
 	display: block;
 	position: relative;
 	padding: 0!important;
+	line-height: normal;
+	height: 100%;
 }
 
 .feature_image:after {
@@ -147,11 +195,12 @@ ul.nav {
 
 ul.nav li {
 	display: inline;
+	margin: 0 10px 0 0;
 }
 
 ul.nav li a {
 	color: #151515;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .post-excerpt a {
@@ -163,10 +212,11 @@ ul.nav li a {
 	margin: 0 0 20px 0;
 }
 
+
+
 .post-content a {
 	color: #1e90ff;
 	text-decoration: none;
-	padding: 10px 0 0 0;
 }
 
 .post-content blockquote {
@@ -305,7 +355,8 @@ section.author {
 	border-top: 1px solid #ddd;
 	padding: 20px 0 0 0;
 	margin: 0 auto;
-	display: table;
+	width: 100%;
+	max-width: 100%;
 }
 
 .author h3 {
@@ -320,10 +371,12 @@ section.author {
 	margin: 0 15px 5px auto;
 	background-size: cover!important;
 	float: left;
+	display: block;
 }
 
 .authordesc {
 	padding: 0 0 0 0;
+	margin: 0 0 0 107px;
 	display: block;
 	box-sizing: inherit;
 }
