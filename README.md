@@ -1,4 +1,4 @@
-# halffull_theme 0.6
+# halffull_theme 0.7
 Minimal theme with a bunch of neat extras such as fitvids.js for responsive embeds and featherlight.js for popping images in a nice overlay.
 Currently supports primary author cards, small post nav, a bunch of headings and so on.
 
@@ -14,24 +14,22 @@ Please note that this is a work in progress. As it runs under MIT lisence, feel 
 
 Author: Dion Tautkus (twitter.com/katerkalu).
 
-Current Version: 0.5
+Current Version: 0.7
 
 ---
 
-# New in 0.6
+# New in 0.7
 
-* Theme makes use of featherlight on post images now
-* Theme uses baskerville font locally
-* some minor changes
-* come css fixes
+* Theme makes use of fontawesome icons and uses them for social media links and stuff
+* some css stuff
 
 ---
 
 # Upcoming
 
-* To update the menu with the social links from the site settings
-* I might integrate some kind of iconset. But that a huuuge maaaayyyybe
-* Update the authorcard with the matching entries from the profile settings
+* ~~To update the menu with the social links from the site settings~~
+* ~~I might integrate some kind of iconset. But that a huuuge maaaayyyybe~~
+* ~~Update the authorcard with the matching entries from the profile settings~~
 * ~~Images in the post loop will get featherlight overlay~~
 * ~~Updating the theme options so you can use excerpts or full posts on the post lists~~
 * Choose wether to use a logo, or text for the main heading (this isn't working somehow right now, mainly because I'm fucking lazy)
@@ -45,6 +43,8 @@ I like Vapor Theme by Seth Lilly, so be sure to [check it out here](https://gith
 ---
 
 # Releases
+
+0.7 - Added fontawesome icons
 
 0.6 - Added featherlight to post images, added baskerville font, and some css fixes
 
