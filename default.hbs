@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
 	<link rel="stylesheet" type="text/css" href="{{asset "css/featherlight.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "css/fontawesome.all.min.css"}}">
 
     {{#if pagination.next}}<link href="{{page_url pagination.next}}" rel="prefetch" />{{/if}}
 
@@ -23,6 +24,7 @@
 <div class="wrapper">
 
     <header id="site-header">
+		{{> social-header}}
         <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
         <h2 class="blog-description">{{@blog.description}}</h2>
         {{navigation}}
@@ -36,6 +38,7 @@
             <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</section>
             <section><a href="https://github.com/katerkalu/halffull_theme" rel=noopener">Half Full theme</a> by Dion Tautkus</section>
             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org/"><span class="hidden">Ghost</span></a></section>
+			<section class="offi-links">{{> offi-links}}</section>
         </div>
     </footer>
 

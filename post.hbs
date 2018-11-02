@@ -13,7 +13,9 @@
 				<a href="{{url}}">{{name}}</a>
 			{{/primary_tag}}
 		</div>
-        <h1 class="post-title">{{{title}}}</h1>
+        
+			<h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+		
         </header>
 
         <section class="post-content">
@@ -45,7 +47,9 @@
 					<h4><a href="{{website}}">{{name}}</a></h4>
 					<p class="bio">{{bio}}</p>
 					<ul class="authorlinks">
-						{{#if twitter}}<li><a href="{{twitter_url}}">{{twitter}}</a></li>{{/if}}
+						{{#if twitter}}<li><a href="{{twitter_url}}"><i class="fab fa-twitter"></i></a></li>{{/if}}
+						{{#if facebook}}<li><a href="{{facebook_url}}"><i class="fab fa-facebook"></i></a></li>{{/if}}
+						{{#if url}}<li><a href="{{url}}"><i class="fas fa-anchor"></i></a></li>{{/if}}
 					</ul>
 				</div>
 			</section>

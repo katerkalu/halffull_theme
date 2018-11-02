@@ -1,7 +1,7 @@
 {
     "name": "Half Full",
     "description": "Minimalisic theme for ghost",
-    "version": "0.6",
+    "version": "0.7",
     "engines": {
         "ghost": ">=2.0.0"
     },
@@ -14,7 +14,7 @@
         "type": "theme",
         "categories": [
             "Minimal",
-            "Magazine"
+            "Blog"
         ]
     },
 	"repository": {
@@ -24,9 +24,9 @@
     "keywords": [
         "ghost",
         "theme",
-        "ghost-theme"
+        "ghost-theme",
     ],
     "config": {
-        "posts_per_page": 5
+        "posts_per_page": 7
     }
 }
