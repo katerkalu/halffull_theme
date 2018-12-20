@@ -8,6 +8,7 @@
 
         <header>
         <div class="post-meta">
+			{{#if featured}}<span style="color: #ff8c00;"><i class="fas fa-fire" title="FEATURED POST!"></i></span>{{/if}}
 			<time class="post-date" datetime="{{date format="YYYY-MM-DDTHH:mm:ss.SS\Z"}}">{{date published_at format="DD.MM.YYYY"}}</time> | 
 			{{#primary_tag}}
 				<a href="{{url}}">{{name}}</a>
@@ -20,7 +21,7 @@
 
         <section class="post-content">
 			{{#if feature_image}}
-				<a href="#" class="feature_image_link" data-featherlight="{{img_url feature_image}}"><img src="{{img_url feature_image}}" class="feature_image"></a>
+				<a href="#" class="feature_image_link" data-featherlight="{{img_url feature_image}}"><img src="{{img_url feature_image}}" class="feature_image" alt="The featured image"></a>
 			{{/if}}
             {{content}}
 			
@@ -58,10 +59,6 @@
         </footer>
 
         {{/post}}
-
-        {{!> comments-disqus}}
-        {{!> comments-facebook}}
-        {{!> comments-google-plus}}
 
     </article>
 

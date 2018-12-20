@@ -1,6 +1,29 @@
 {{!< default}}
 
 <main class="content" role="main">
+	
+	{{#tag}}
+	{{#if feature_image}}
+	<div class="tag-page-with-img">
+		<img src="{{img_url feature_image}}" class="tag-page-img">
+		<p>
+			<span class="tag-page-name"><i class="fas fa-anchor"></i><br>{{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}} in {{name}}</span><br>
+            <span class="tag-page-desc">{{description}}</span>  
+		</p>
+	</div>
+	{{else}}
+	<div class="tag-page">
+		<p>
+			<span class="tag-page-name"><i class="fas fa-anchor"></i><br>{{name}}</span><br>
+			{{#if description}}
+                    {{description}}
+                {{else}}
+                    A collection of {{plural ../pagination.total empty='posts' singular='one post' plural='% posts'}}
+             {{/if}}
+		</p>
+	</div>
+	{{/if}}
+	{{/tag}}
 
     {{#foreach posts}}
 

@@ -1,7 +1,7 @@
 {
     "name": "Half Full",
     "description": "Minimalisic theme for ghost",
-    "version": "0.7",
+    "version": "0.8",
     "engines": {
         "ghost": ">=2.0.0"
     },
