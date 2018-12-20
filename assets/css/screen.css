@@ -12,6 +12,10 @@
        url('../fonts/libre-baskerville-v5-latin-regular.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
 }
 
+/* 	------------------------------------------------------------
+	GENERAL CSS
+	------------------------------------------------------------ */
+
 body {
   background-color: #ffffff;
   color: #333;
@@ -40,22 +44,111 @@ a {
 	color: #333;
 	transition: 500ms;
 	-webkit-transition: 500ms;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
 }
 
 h1 {
-  color: #151515;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 42px;
-  margin: 0;
-  padding: 0;
+	color: #151515;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 42px;
+	margin: 0;
+	padding: 0;
 }
+
+/* 	------------------------------------------------------------
+	
+	1. BASE CONTAINER CSS
+	
+	------------------------------------------------------------ */
 
 .wrapper {
 	max-width: 560px;
 	width: 90%;
 	margin: 0 auto;
 	padding: 0 15px 0 15px;
+}
+
+article,
+a.archive-link,
+.article-nav {
+	margin: 40px auto;
+	max-width: 100%;
+	width: 100%;
+}
+
+article.preview {
+	margin: 0 auto 40px auto;
+	max-width: 100%;
+	width: 100%;
+	padding: 0 0 30px 0;
+	border-bottom: 1px dashed #ddd;
+}
+
+.tag-page {
+	margin: 0 auto 40px auto;
+	max-width: 100%;
+	width: 100%;
+	background: #f0f8ff;
+	border: dashed 1px #1e90ff;
+}
+
+.tag-page p {
+	color: #1e90ff;
+	margin: 0;
+	font-size: 14px;
+	padding: 10px;
+	text-align: center;
+}
+
+.tag-page-name {
+	font-size: 18px;
+}
+
+.tag-page-with-img {
+	margin: 0 auto 40px auto;
+	max-width: 100%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	color: white;
+	background-color: #000000;
+	height: 315px;
+}
+
+.tag-page-with-img p {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 2px 2px #000000;
+	width: 70%;
+}
+
+.tag-page-desc {
+	font-size: 14px;
+}
+
+.tag-page-img {
+	width: 100%;
+	max-width: 100%;
+	height: 315px;
+	opacity: 0.5;
+}
+
+
+/* 	------------------------------------------------------------
+	
+	2. SITE HEADER
+	
+	------------------------------------------------------------ */
+	
+#site-header {
+	margin: 20px auto 40px auto;
+	max-width: 100%;
+	width: 100%;
 }
 
 .social-head-menu {
@@ -77,108 +170,82 @@ h1 {
 	margin: 0 10px 0 0;
 }
 
-.social-head-menu li a {
-	color: #333;
+a:hover.social-head-facebook {
+	color: #3b5998;
+}
+
+a:hover.social-head-twitter {
+	color: #00acee;
+}
+
+a:hover.social-head-rss {
+	color: f26522;
+}
+
+
+h1.blog-title,
+h2.blog-description {
+	text-align: center;
+}
+
+h1.blog-title {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 22px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+h1.blog-title a {
 	text-decoration: none;
+	color: #151515;
 }
 
-#site-header {
-	margin: 20px auto 40px auto;
-  max-width: 100%;
-  width: 100%;
+h2.blog-description {
+	margin-bottom: 10px;
+	padding: .5em 1em;
+	line-height: 1.2em;
+	font-size: 12px;
+	font-weight: normal;
 }
 
-
-article,
-a.archive-link,
-.article-nav {
-  margin: 40px auto;
-  max-width: 100%;
-  width: 100%;
-}
-
-article.preview {
-	margin: 0 auto 40px auto;
-	max-width: 100%;
-	width: 100%;
-	padding: 0 0 30px 0;
-	border-bottom: 1px dashed #ddd;
-}
+/* 	------------------------------------------------------------
+	
+	POST CSS SETTINGS
+	
+	------------------------------------------------------------ */
 
 a.read-more {
-	margin: 16px 0 0 0;
 	border-bottom: 1px solid #1e90ff;
 	color: #151515!important;
 	display: inline-block;
 }
 
-/* === Header === */
-h1.blog-title,
-h2.blog-description {
-  text-align: center;
-}
-h1.blog-title {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 22px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 0;
-}
-h1.blog-title a {
-	text-decoration: none;
-	color: #151515;
-}
-h2.blog-description {
-  margin-bottom: 10px;
-  padding: .5em 1em;
-  line-height: 1.2em;
-  font-size: 12px;
-  font-weight: normal;
-}
-section.footer-description {
-  margin-bottom: 1em;
-}
 header.article-header,
 header.page-header {
-  margin-bottom: 3em;
+	margin-bottom: 3em;
 }
 
 h1.post-title {
-	background: url("../images/h1.png") no-repeat left center;
 	color: #333;
-	padding: 0 0 0 12px;
 	margin: 0 0 16px 0;
 	font-size: 22px;
 	line-height: 22px;
 	font-weight: 700;
 }
 
-
 h1.post-title a {
 	color: #333;
 	text-decoration: none;
 }
 
+h1.post-title a:hover {
+	color: #1e90ff;
+}
+
 h2 { 
 	font-size: 16px;
-}
-
-.feature_image {
-	width: 100%;
-	margin: 0 auto 16px auto;
-}
-
-.feature_image_link {
-	display: block;
-	position: relative;
-	padding: 0!important;
-	line-height: normal;
-	height: 100%;
-}
-
-.feature_image:after {
-	margin: 0 0 16px 0;
 }
 
 .my-fancy-nav-wrapper {
@@ -186,24 +253,7 @@ h2 {
 	text-align: center;
 }
 
-ul.nav {
-	margin: 0 auto;
-	text-align: center;
-	display: inline;
-	padding-inline-start: 0px;
-}
-
-ul.nav li {
-	display: inline;
-	margin: 0 10px 0 0;
-}
-
-ul.nav li a {
-	color: #151515;
-	text-decoration: underline;
-}
-
-.post-excerpt a {
+.post-excerpt a:hover {
 	color: #1e90ff;
 	text-decoration: none;
 }
@@ -212,11 +262,12 @@ ul.nav li a {
 	margin: 0 0 20px 0;
 }
 
-
-
 .post-content a {
+	text-decoration: underline;
+}
+
+.post-content a:hover {
 	color: #1e90ff;
-	text-decoration: none;
 }
 
 .post-content blockquote {
@@ -269,7 +320,28 @@ ul.nav li a {
 
 }
 
+/* 	------------------------------------------------------------
+	
+	POST IMAGES & EMBEDS
+	
+	------------------------------------------------------------ */
+	
+.feature_image {
+	width: 100%;
+	margin: 0 auto 16px auto;
+}
 
+.feature_image_link {
+	display: block;
+	position: relative;
+	padding: 0!important;
+	line-height: normal;
+	height: 100%;
+}
+
+.feature_image:after {
+	margin: 0 0 16px 0;
+}
 
 figure.kg-image-card {
 	margin-inline-start: 0;
@@ -299,6 +371,12 @@ figure.kg-image-card figcaption {
 	text-align: center;
 	font-style: italic;
 }
+
+/* 	------------------------------------------------------------
+	
+	POST NAVIGATION
+	
+	------------------------------------------------------------ */
 
 section.post-nav {
 	border-top: 1px solid #ddd;
@@ -343,13 +421,37 @@ section.post-nav {
 }
 
 .post-nav a {
-	color: #151515;
 	text-decoration: none;
 	width: auto;
 	height: auto;
-	-webkit-transition: 500ms;
-    transition: 500ms;
 }
+
+.post-nav a:hover {
+	color: #1e90ff;
+}
+
+ul.nav {
+	margin: 0 auto;
+	text-align: center;
+	display: inline;
+	padding-inline-start: 0px;
+}
+
+ul.nav li {
+	display: inline;
+	margin: 0 10px 0 0;
+}
+
+ul.nav li a:hover {
+	color: #1e90ff;
+	text-decoration: underline;
+}
+
+/* 	------------------------------------------------------------
+	
+	POST AUTHOR SETTINGS
+	
+	------------------------------------------------------------ */
 
 section.author {
 	border-top: 1px solid #ddd;
@@ -413,6 +515,12 @@ section.author {
 	font-size: 14px;
 }
 
+/* 	------------------------------------------------------------
+	
+	SITE PAGINATION
+	
+	------------------------------------------------------------ */
+
 .pagination {
 	margin: -21px auto 0 auto;
 	padding: 0 0 21px 0;
@@ -449,6 +557,12 @@ section.author {
 	text-align: right;
 }
 
+/* 	------------------------------------------------------------
+	
+	SITE FOOTER
+	
+	------------------------------------------------------------ */
+
 footer.site-footer {
 	margin: 100px auto 40px auto;
 	max-width: 100%;
@@ -461,6 +575,39 @@ footer.site-footer {
 footer.site-footer a {
 	color: #151515;
 	text-decoration: underline;
+}
+
+section.footer-description {
+  margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 600px)  {
+	
+.tag-page-with-img {
+	margin: 0 auto 40px auto;
+	max-width: 100%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	color: white;
+	background-color: #000000;
+	height: 190px;
+}
+
+.tag-page-with-img p {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tag-page-img {
+	width: 100%;
+	max-width: 100%;
+	height: 190px;
+	opacity: 0.5;
+}
+	
 }
 
 
