@@ -1,8 +1,7 @@
-# halffull_theme 0.7
-Minimal theme with a bunch of neat extras such as fitvids.js for responsive embeds and featherlight.js for popping images in a nice overlay.
-Currently supports primary author cards, small post nav, a bunch of headings and so on.
+# halffull_theme 0.8
+Minimal theme with a bunch of neat extras such as fitvids.js for responsive embeds and featherlight.js for popping images in a nice overlay. Currently supports primary author cards, small post nav, a bunch of headings and so on.
 
-This theme uses Georgia as a websafe font and loads any plugins, such as jQuery, locally.
+This theme uses Baskerville font and loads any plugins, such as jQuery, locally.
 
 Please note that this is a work in progress. As it runs under MIT lisence, feel free to do stuff with it. Shoot me an E-Mail if you did so.
 
@@ -14,14 +13,16 @@ Please note that this is a work in progress. As it runs under MIT lisence, feel 
 
 Author: Dion Tautkus (twitter.com/katerkalu).
 
-Current Version: 0.7
+Current Version: 0.8
 
 ---
 
-# New in 0.7
+# New in 0.8
 
-* Theme makes use of fontawesome icons and uses them for social media links and stuff
-* some css stuff
+* Added tag archive pages with heading
+* Tag archives can use tag custom images
+* Theme now supports fontawesome icons further
+* Many CSS fixes, including link colors and hover effects
 
 ---
 
@@ -43,6 +44,8 @@ I like Vapor Theme by Seth Lilly, so be sure to [check it out here](https://gith
 ---
 
 # Releases
+
+0.8 - Further use of fontawesome, tag archives with header images and css tweaks
 
 0.7 - Added fontawesome icons
 
