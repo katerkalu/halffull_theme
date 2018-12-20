@@ -1,8 +1,8 @@
 <div class="social-head-menu">
 	<ul>
-		{{#if @blog.twitter}}<li><a href="{{twitter_url}}"><i class="fab fa-twitter"></i></a></li>{{/if}}
-		{{#if @blog.facebook}}<li><a href="{{facebook_url}}"><i class="fab fa-facebook"></i></a></li>{{/if}}
-		<li><a href="{{@blog.url}}/rss/" name="link to the rss feed"><i class="fas fa-rss"></i></a></li>
+		{{#if @blog.twitter}}<li><a href="{{twitter_url}}" class="social-head-twitter"><i class="fab fa-twitter"></i></a></li>{{/if}}
+		{{#if @blog.facebook}}<li><a href="{{facebook_url}}" class="social-head-facebook"><i class="fab fa-facebook"></i></a></li>{{/if}}
+		<li><a href="{{@blog.url}}/rss/" name="link to the rss feed" class="social-head-rss"><i class="fas fa-rss"></i></a></li>
 	</ul>
 </div>
 	
