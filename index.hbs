@@ -19,12 +19,18 @@
         </header>
         <section class="post-content">
 			{{#if feature_image}}
-				<a href="{{url}}" class="feature_image_link" name="{{{title}}}"><img src="{{img_url feature_image}}" class="feature_image" alt="The featured image"></a>
+				<a href="{{url}}" class="feature_image_link" name="{{{title}}}"><img class="feature_image" srcset="{{img_url feature_image size="s"}} 324w,
+                    {{img_url feature_image size="m"}} 560w,
+                    {{img_url feature_image size="l"}} 1024w,
+                    {{img_url feature_image size="xl"}} 2000w"
+            sizes="(max-width: 1000px) 324px, 560px"
+            src="{{img_url feature_image size="m"}}"
+            alt="{{title}}"></a>
 			{{/if}}
 			
 			{{#if custom_excerpt}}
 				<p>{{custom_excerpt}}</p>
-				<p><a class="read-more" href="{{url}}">Read on &raquo;</a></p>
+				<p><a class="read-more" href="{{url}}" title="Read the full {{{title}}} post">Read on &raquo;</a></p>
 			{{else}}
 				{{content}}
 			{{/if}}

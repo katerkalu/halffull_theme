@@ -1,0 +1,85 @@
+{{!< default}}
+
+<main class="content" role="main">
+	
+	{{#author}}
+	{{#if cover_image}}
+	<div class="author-page-with-img">
+			<img srcset="{{img_url cover_image size="s"}} 324w,
+            {{img_url cover_image size="m"}} 560w"
+			sizes="(max-width: 1000px) 324px, 560px" 
+			src="{{img_url cover_image size="m"}}" class="author-page-img">
+			<div class="author-page-with-img-container">
+				{{#if profile_image}}
+					<img class="author-page-profile-image" src="{{profile_image}}" alt="{{name}}" />
+				{{/if}}
+				<span class="author-page-name">{{name}}</span>	
+				<span class="author-page-infos">
+				{{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
+				</span>
+				<ul class="authorlinks">
+						{{#if twitter}}<li><a href="{{twitter_url}}" class="social-twitter"><i class="fab fa-twitter"></i></a></li>{{/if}}
+						{{#if facebook}}<li><a href="{{facebook_url}}" class="social-facebook"><i class="fab fa-facebook"></i></a></li>{{/if}}
+						{{#if website}}<li><a href="{{website}}"><i class="fas fa-anchor"></i></a></li>{{/if}}
+						<li><a href="{{url}}rss" class="social-rss"><i class="fas fa-rss"></i></a></li>
+				</ul>
+			</div>
+	</div>
+	{{else}}
+	<div class="author-page">
+		<p>
+			<div class="author-page-container">
+				{{#if profile_image}}
+					<img class="author-page-profile-image" src="{{profile_image}}" alt="{{name}}" />
+				{{/if}}
+				<span class="author-page-name">{{name}}</span>
+				<span class="author-page-infos">
+                    Contributed {{plural ../pagination.total empty='posts' singular='one post' plural='% posts'}} to the site.
+				</span>
+				<ul class="authorlinks">
+						{{#if twitter}}<li><a href="{{twitter_url}}" class="social-twitter"><i class="fab fa-twitter"></i></a></li>{{/if}}
+						{{#if facebook}}<li><a href="{{facebook_url}}" class="social-facebook"><i class="fab fa-facebook"></i></a></li>{{/if}}
+						{{#if website}}<li><a href="{{website}}"><i class="fas fa-anchor"></i></a></li>{{/if}}
+				</ul>
+			</div>
+		</p>
+	</div>
+	{{/if}}
+	{{/author}}
+
+    {{#foreach posts}}
+
+    <article class="preview">
+        <header>
+			<div class="post-meta">
+				{{#if featured}}<span style="color: #ff8c00;"><i class="fas fa-fire" title="FEATURED POST!"></i></span>{{/if}}
+				<time class="post-date" datetime="{{date format="YYYY-MM-DDTHH:mm:ss.SS\Z"}}">{{date published_at format="DD.MM.YYYY"}}</time> | 
+				{{#primary_tag}}
+					<a href="{{url}}">{{name}}</a>
+				{{/primary_tag}}
+			</div>
+			
+			<h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+			
+        </header>
+        <section class="post-content">
+			{{#if feature_image}}
+				<a href="{{url}}" class="feature_image_link" name="{{{title}}}"><img src="{{img_url feature_image}}" class="feature_image" alt="The featured image"></a>
+			{{/if}}
+			
+			{{#if custom_excerpt}}
+				<p>{{custom_excerpt}}</p>
+				<p><a class="read-more" href="{{url}}">Read on &raquo;</a></p>
+			{{else}}
+				{{content}}
+			{{/if}}
+			
+			
+        </section>
+    </article>
+
+    {{/foreach}}
+
+    {{pagination}}
+
+</main>

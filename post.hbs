@@ -11,7 +11,7 @@
 			{{#if featured}}<span style="color: #ff8c00;"><i class="fas fa-fire" title="FEATURED POST!"></i></span>{{/if}}
 			<time class="post-date" datetime="{{date format="YYYY-MM-DDTHH:mm:ss.SS\Z"}}">{{date published_at format="DD.MM.YYYY"}}</time> | 
 			{{#primary_tag}}
-				<a href="{{url}}">{{name}}</a>
+				<a href="{{url}}" title="{{name}} tag archive link">{{name}}</a>
 			{{/primary_tag}}
 		</div>
         
@@ -21,11 +21,31 @@
 
         <section class="post-content">
 			{{#if feature_image}}
-				<a href="#" class="feature_image_link" data-featherlight="{{img_url feature_image}}"><img src="{{img_url feature_image}}" class="feature_image" alt="The featured image"></a>
+				<a href="#" class="feature_image_link" data-featherlight="{{img_url feature_image size="xl"}}"><img class="feature_image" srcset="{{img_url feature_image size="s"}} 324w,
+                    {{img_url feature_image size="m"}} 560w,
+                    {{img_url feature_image size="l"}} 1024w,
+                    {{img_url feature_image size="xl"}} 2000w"
+            sizes="(max-width: 1000px) 324px, 560px"
+            src="{{img_url feature_image size="m"}}"
+            alt="{{title}}"></a>
 			{{/if}}
             {{content}}
 			
-			{{#if tags}}<div class="tagwrapper"><div class="post-data tags">Tags: {{tags prefix="" separator=", "}}</div></div>{{/if}}
+			<div class="tagwrapper">
+				{{#if tags}}
+					<div class="post-data tags">Tags: {{tags prefix="" separator=", "}}</div>
+				{{/if}}
+				<div class="postshare">
+					<ul>
+					<li class="postshare-fb">
+						<a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share', 'width=580, height=296'); return false;"><i class="fab fa-facebook"></i></a>
+					</li>
+					<li class="postshare-tw">
+						<a href="https://twitter.com/share?text={{encode title}}&url={{url absolute='true'}}" onclick="window.open(this.href, 'twitter-share', 'width=550, height=235'); return false;"><i class="fab fa-twitter"></i></a>
+					</li>
+					</ul>
+				</div>
+			</div>
         </section>
 		
 		<section class="post-nav">
@@ -45,12 +65,12 @@
             <section class="author">
                 <div class="authorimage" style="background: url({{profile_image}})"></div>
 				<div class="authordesc">
-					<h4><a href="{{website}}">{{name}}</a></h4>
+					<h4><a href="{{url}}">{{name}}</a></h4>
 					<p class="bio">{{bio}}</p>
 					<ul class="authorlinks">
-						{{#if twitter}}<li><a href="{{twitter_url}}"><i class="fab fa-twitter"></i></a></li>{{/if}}
-						{{#if facebook}}<li><a href="{{facebook_url}}"><i class="fab fa-facebook"></i></a></li>{{/if}}
-						{{#if url}}<li><a href="{{url}}"><i class="fas fa-anchor"></i></a></li>{{/if}}
+						{{#if twitter}}<li><a href="{{twitter_url}}" class="social-twitter"><i class="fab fa-twitter" title="author twitter icon"></i></a></li>{{/if}}
+						{{#if facebook}}<li><a href="{{facebook_url}}" class="social-facebook"><i class="fab fa-facebook" title="author facebook icon"></i></a></li>{{/if}}
+						{{#if website}}<li><a href="{{website}}"><i class="fas fa-anchor" title="author website icon"></i></a></li>{{/if}}
 					</ul>
 				</div>
 			</section>
