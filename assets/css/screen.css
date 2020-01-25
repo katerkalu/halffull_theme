@@ -45,9 +45,9 @@ h1 {
 }
 
 /* 	------------------------------------------------------------
-	
+
 	1. BASE CONTAINER CSS
-	
+
 	------------------------------------------------------------ */
 
 .wrapper {
@@ -90,11 +90,11 @@ article.preview {
 
 
 /* 	------------------------------------------------------------
-	
+
 	2. SITE HEADER
-	
+
 	------------------------------------------------------------ */
-	
+
 #site-header {
 	margin: 20px auto 40px auto;
 	max-width: 100%;
@@ -161,9 +161,9 @@ h2.blog-description {
 }
 
 /* 	------------------------------------------------------------
-	
+
 	POST CSS SETTINGS
-	
+
 	------------------------------------------------------------ */
 
 a.read-more {
@@ -193,7 +193,7 @@ h1.post-title a:hover {
 	color: #1e90ff;
 }
 
-h2 { 
+h2 {
 	font-size: 16px;
 }
 
@@ -227,7 +227,7 @@ h2 {
 }
 
 .post-content code {
-	font-family: monospace; 
+	font-family: monospace;
 }
 
 .post-content h1 {
@@ -316,11 +316,11 @@ footer.post-footer::after {
 }
 
 /* 	------------------------------------------------------------
-	
+
 	POST IMAGES & EMBEDS
-	
+
 	------------------------------------------------------------ */
-	
+
 .feature_image {
 	width: 100%;
 	margin: 0 auto 16px auto;
@@ -360,7 +360,7 @@ figure.kg-embed-card {
 
 figure.kg-embed-card iframe {
 	max-width: 100%;
-	
+
 }
 
 figure.kg-image-card figcaption {
@@ -370,11 +370,11 @@ figure.kg-image-card figcaption {
 }
 
 .kg-width-wide {
-	
+
 }
 
 .kg-width-full {
-	
+
 }
 
 .kg-gallery-container {
@@ -420,11 +420,120 @@ figure.kg-image-card figcaption {
 .kg-code-card pre {
     margin: 0;
 }
+.kg-bookmark-card {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.kg-bookmark-container {
+    display: flex;
+    color: currentColor;
+    font-family: inherit;
+    text-decoration: none!important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.kg-bookmark-container:hover {
+    text-decoration: none;
+}
+
+.kg-bookmark-content {
+  text-decoration: none;
+  display: flex;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-basis: 100%;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.kg-bookmark-content a {
+  text-decoration: none;
+}
+
+.kg-bookmark-title {
+    font-weight: 600;
+}
+
+.kg-bookmark-metadata,
+.kg-bookmark-description {
+    margin-top: .5em;
+}
+
+.kg-bookmark-metadata {
+  color: #343f44;
+font-size: 14px;
+font-weight: 500;
+display: -webkit-box;
+display: flex;
+-webkit-box-align: center;
+align-items: center;
+margin-top: 14px;
+}
+
+.kg-bookmark-description {
+  display: -webkit-box;
+font-size: 14px;
+line-height: 1.5em;
+margin-top: 10px;
+color: #54666d;
+font-weight: 400;
+max-height: 66px;
+overflow-y: hidden;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+}
+
+.kg-bookmark-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.kg-bookmark-thumbnail {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  min-width: 33%;
+  max-width: 40%;
+}
+
+.kg-bookmark-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+.kg-bookmark-author {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.kg-bookmark-publisher {
+  color: #3eb0ef;
+overflow: hidden;
+max-width: 240px;
+white-space: nowrap;
+display: block;
+line-height: 1.65em;
+}
+
+.kg-bookmark-author::after {
+    content: "•";
+    margin: 0 .3em;
+}
 
 /* 	------------------------------------------------------------
-	
+
 	POST NAVIGATION
-	
+
 	------------------------------------------------------------ */
 
 section.post-nav {
@@ -498,9 +607,9 @@ ul.nav li a:hover {
 }
 
 /* 	------------------------------------------------------------
-	
+
 	POST AUTHOR SETTINGS
-	
+
 	------------------------------------------------------------ */
 
 section.author {
@@ -565,9 +674,9 @@ section.author {
 }
 
 /* 	------------------------------------------------------------
-	
+
 	TAG ARCHIVE SETTINGS
-	
+
 	------------------------------------------------------------ */
 
 .tag-page {
@@ -622,9 +731,9 @@ section.author {
 }
 
 /* 	------------------------------------------------------------
-	
+
 	author ARCHIVE SETTINGS
-	
+
 	------------------------------------------------------------ */
 
 .author-page {
@@ -725,9 +834,9 @@ section.author {
 }
 
 /* 	------------------------------------------------------------
-	
+
 	SITE PAGINATION
-	
+
 	------------------------------------------------------------ */
 
 .pagination {
@@ -767,9 +876,9 @@ section.author {
 }
 
 /* 	------------------------------------------------------------
-	
+
 	SITE FOOTER
-	
+
 	------------------------------------------------------------ */
 
 footer.site-footer {
@@ -807,7 +916,7 @@ section.footer-description {
 }
 
 @media only screen and (max-width: 600px)  {
-	
+
 .tag-page-with-img {
 	margin: 0 auto 40px auto;
 	max-width: 100%;
@@ -834,9 +943,9 @@ section.footer-description {
 }
 
 /* 	------------------------------------------------------------
-	
+
 	author ARCHIVE SETTINGS MOBILE
-	
+
 	------------------------------------------------------------ */
 
 .author-page {
@@ -910,8 +1019,5 @@ section.footer-description {
 	height: 200px;
 	opacity: 0.5;
 }
-	
+
 }
-
-
-
