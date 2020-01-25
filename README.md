@@ -1,7 +1,7 @@
 # halffull_theme 0.93
 Minimal theme with a bunch of neat extras such as fitvids.js for responsive embeds and featherlight.js for popping images in a nice overlay. Currently supports primary author cards, small post nav, a bunch of headings and so on.
 
-This theme uses Baskerville font and loads any plugins, such as jQuery, locally.
+This theme uses Nunito font and loads any plugins, such as jQuery, locally.
 
 Please note that this is a work in progress. As it runs under MIT lisence, feel free to do stuff with it. Shoot me an E-Mail if you did so.
 
