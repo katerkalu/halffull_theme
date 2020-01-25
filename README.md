@@ -1,4 +1,4 @@
-# halffull_theme 0.8
+# halffull_theme 0.93
 Minimal theme with a bunch of neat extras such as fitvids.js for responsive embeds and featherlight.js for popping images in a nice overlay. Currently supports primary author cards, small post nav, a bunch of headings and so on.
 
 This theme uses Baskerville font and loads any plugins, such as jQuery, locally.
@@ -13,16 +13,19 @@ Please note that this is a work in progress. As it runs under MIT lisence, feel 
 
 Author: Dion Tautkus (twitter.com/katerkalu).
 
-Current Version: 0.8
+Current Version: 0.93 as of 2020-01-25
 
 ---
 
 # New in 0.8
 
-* Added tag archive pages with heading
-* Tag archives can use tag custom images
-* Theme now supports fontawesome icons further
+* Compatible with Ghost 3.2.0 up
+* Gallery support with featherlight overlay
+* CSS fixes for new ghost major release
 * Many CSS fixes, including link colors and hover effects
+* Cards have been implemented
+* secondary menu implemented
+* and some other stuff
 
 ---
 
@@ -44,6 +47,8 @@ I like Vapor Theme by Seth Lilly, so be sure to [check it out here](https://gith
 ---
 
 # Releases
+
+0.93 - Updated theme for ghost 3
 
 0.8 - Further use of fontawesome, tag archives with header images and css tweaks
 
