@@ -5,7 +5,7 @@ This theme uses Baskerville font and loads any plugins, such as jQuery, locally.
 
 Please note that this is a work in progress. As it runs under MIT lisence, feel free to do stuff with it. Shoot me an E-Mail if you did so.
 
-![Some Text](https://github.com/katerkalu/halffull_theme/blob/master/halfffull_theme_1.png)
+![Some Text](https://github.com/katerkalu/halffull_theme/blob/master/halffull_theme_1.png)
 
 ---
 
@@ -17,7 +17,7 @@ Current Version: 0.93 as of 2020-01-25
 
 ---
 
-# New in 0.8
+# New in 0.93
 
 * Compatible with Ghost 3.2.0 up
 * Gallery support with featherlight overlay
