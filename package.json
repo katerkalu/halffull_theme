@@ -1,9 +1,9 @@
 {
     "name": "half-full",
     "description": "Minimalisic theme for ghost",
-    "version": "0.9.0",
+    "version": "0.9.3",
     "engines": {
-        "ghost": ">=2.0.0"
+        "ghost": ">=3.0.0"
     },
     "license": "MIT",
     "author": {

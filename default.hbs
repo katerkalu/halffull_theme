@@ -38,39 +38,39 @@
             <div class="copyright">&copy; {{date format="YYYY"}} <a href="/">{{@site.title}}</a>.</div>
             <div><a href="https://github.com/katerkalu/halffull_theme" rel=noopener" name="This theme on github">Half Full theme</a> by Dion Tautkus</div>
             <div class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org/"><span class="hidden">Ghost</span></a></div>
-			<div class="offi-links">{{> offi-links}}</div>
+			<div class="offi-links">{{navigation type="secondary"}}</div>
         </div>
-		
-    </footer>  
+
+    </footer>
 </div>
-	
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script>
 		$(document).ready(function(){
 		// Target your .container, .wrapper, .post, etc.
 		$(".post-content").fitVids();
 		$('.kg-image').featherlight({targetAttr: 'src'});
-		
-		
+
+
 		$('.kg-gallery-image img').featherlightGallery({
 		targetAttr: 'src',
 		previousIcon: '&#9664;',     /* Code that is used as previous icon */
 		nextIcon: '&#9654;',         /* Code that is used as next icon */
 		galleryFadeIn: 100,          /* fadeIn speed when slide is loaded */
 		galleryFadeOut: 300          /* fadeOut speed before slide is loaded */
-		
+
 		});
-		
+
 		});
 	</script>
-	
+
 	<script src="//cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.1/jquery.detect_swipe.min.js"></script>
 	<script type="text/javascript" src="{{asset "js/featherlight.js"}}"></script>
 	<script type="text/javascript" src="{{asset "js/featherlight.gallery.js"}}"></script>
 	<script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-	
-	
-	
+
+
+
 	{{ghost_foot}}
 </body>
 </html>
